@@ -1,43 +1,51 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url("/image/fondo1.svg");
+  background-image: url("../images/fondoLogin.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /*background-color: white;*/
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* antes: center */
   align-items: center;
   height: 100vh;
+  padding-right: 80px; /* ajustá esta distancia al borde */
 }
 
 .container {
-  background: #E2E8F0;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px 30px;
-  box-shadow: 0 0 10px rgba(255,255,255,1);
   text-align: center;
   max-width: 520px; /* Reduce este número para hacerlo más pequeño */
   width: 100%;       /* Asegura que sea responsivo en celulares */
+  margin-right: 80px; /* ajustá esta distancia al borde */ /* Ajusta la opacidad según tu preferencia */
+}
+
+p {
+  font-family: Arial, sans-serif;
+  color: #b1b1b1;
+  font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+  margin-bottom: 10px; /* Espacio debajo del párrafo */
 }
 
 h1 {
-  font-family: 'Georgia', serif; /* Fuente exclusiva para el título */
-  color: black; /* Color específico para el título */
+  font-family: 'Lucida console', Monospace;
+  font-size: 1.7rem; /* Tamaño de fuente más pequeño */
+  color: rgb(255, 255, 255); /* Color específico para el título */
   font-weight: bold; /*Aplica negrita */
+  padding-bottom: 2px; /* Espacio debajo del título */
 }
 
 /* Nuevo contenedor para cada par (label + input) */
 .form-group {
   width: 250px;        /* Mismo ancho que tienen tus inputs */
-  margin: 0 auto 15px; /* Centra el bloque completo y da espacio abajo */
+  margin: 0 auto 25px; /* Centra el bloque completo y da espacio abajo */
   text-align: left;    /* Rompe el centrado del contenedor principal */
 }
 
 label{
-  font-family: 'Georgia', serif;
-  color: black;
-  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #fefefe;
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
 }
 
 .envoltorio-input{
@@ -57,7 +65,7 @@ input{
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  color: black;
+  color: #403394;
   pointer-events: none;
 }
 
@@ -70,7 +78,7 @@ input{
 }
 
 .btn {
-  background-color: #0F4C81; /* Color azul de tu botón */
+  background-color: #5a36a9; /* Color azul de tu botón */
   color: white;
   border: none;
   padding: 8px 20px;

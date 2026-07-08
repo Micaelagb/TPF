@@ -9,26 +9,28 @@
         <!-- BootStrap Icons -->
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/stylesLogin.css">
+        <link rel="stylesheet" href="css/stylesLogin.css">
     </head>
     <body>
         <div class="container py-5">
-            <h1 class="my-4">Acceso al Sistema</h1>
+            <h1 class="my-4">INICIAR SESIÓN</h1>
+
 
             <form id="formLogin">
                 <!-- Bloque Usuario -->
                 <div class = "form-group">
-                    <label for="usuario" class="form-label">Usuario:</label> 
+                    <P>Ingrese sus datos para acceder al sistema.</P>
+                    <label for="usuario" class="form-label">Nombre de usuario</label> 
                     <div class="envoltorio-input">
-                        <input type="text" class= "form-control" id="usuario" required placeholder="Introduzca su usuario">
+                        <input type="text" class= "form-control" id="usuario">
                         <span class="icon-inside"><i class="bi bi-person-fill"></i></span>
                     </div> 
                 </div>
                 <!-- Bloque Clave -->
                 <div class = "form-group">
-                    <label for="clave" class="form-label">Clave:</label> 
+                    <label for="clave" class="form-label">Contraseña</label>
                     <div class="envoltorio-input">
-                        <input type="password" class= "form-control" id="clave" required placeholder="Introduzca su clave">
+                        <input type="password" class= "form-control" id="clave">
                         <span class="icon-inside"><i class="bi bi-lock-fill"></i></span>
                     </div>
                 </div>
